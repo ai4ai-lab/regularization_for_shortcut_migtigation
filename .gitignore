@@ -1,0 +1,13 @@
+### regular ignorance
+*.pyc
+*.DS_Store
+__pycache__/
+
+### raw data not included
+/data/colored_mnist/
+/data/mimic_icu/
+/data/multinli/
+/lib/bert_base_uncased/
+
+### results not included
+*.pt
