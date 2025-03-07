@@ -132,8 +132,8 @@ class ColoredMnist():
 if __name__ == "__main__":
     # Add argument parser
     parser = argparse.ArgumentParser(description='Colored MNIST dataset generation and shortcut features assigning...')
-    parser.add_argument('--shortcut_ratio', type=float, default=1.0,
-                        help='Ratio of shortcuts in training data (default: 1.0)')
+    # parser.add_argument('--shortcut_ratio', type=float, default=1.0,
+    #                     help='Ratio of shortcuts in training data (default: 1.0)')
     parser.add_argument('--random_state', type=int, default=42,
                         help='Random state for data generation (default: 42)')
     parser.add_argument('--device', type=str, default='cpu',
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     if not files_exist:
         print("Generating new data...")
         color_mnist = ColoredMnist("colored-mnist", random_state=args.random_state)
-        color_mnist.get_train_test_idx(shortcut_ratio=args.shortcut_ratio)
+        color_mnist.get_train_test_idx(shortcut_ratio=1)
         unbiased_train_data, unbiased_color_label = color_mnist.generate_unbiased_data()
         train_data, train_binary_label, train_color_label, test_data, test_binary_label, test_color_label = color_mnist.assign_shortcuts()
 

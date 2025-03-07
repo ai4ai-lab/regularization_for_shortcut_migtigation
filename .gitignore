@@ -4,9 +4,11 @@
 __pycache__/
 
 ### raw data not included
-/data/colored_mnist/
-/data/mimic_icu/
-/data/multinli/
+/data/colored_mnist/*
+/data/mimic_icu/*
+/data/multinli/*
+!/data/multinli/metadata_preset.csv
+!/data/multinli/metadata_random.csv
 /lib/bert_base_uncased/
 
 ### results not included
