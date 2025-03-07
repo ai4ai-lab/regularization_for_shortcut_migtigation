@@ -9,7 +9,7 @@ __pycache__/
 /data/multinli/*
 !/data/multinli/metadata_preset.csv
 !/data/multinli/metadata_random.csv
-/lib/bert_base_uncased/
+/lib/bert_base_uncased/*
 
 ### results not included
 *.pt
