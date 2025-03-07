@@ -30,14 +30,17 @@ pip install -r requirements.txt
 The project uses three different real-world datasets to evaluate shortcut mitigation methods:
 
 1. **Colored MNIST** 
+
 A modified version of MNIST where digits are colored either red or green, creating a potential shortcut feature. The dataset is automatically downloaded and processed when running the colored MNIST experiments.
 
 2. **MultiNLI** 
+
 A natural language inference dataset where the presence of negation words can create shortcuts.
     1. Download the BERT base uncased model (`config.json`, and `pytorch_model.bin`) from https://huggingface.co/google-bert/bert-base-uncased/tree/main and place them in /lib/bert_base_uncased/
     2. Download the MultiNLI dataset from https://nlp.stanford.edu/data/dro/multinli_bert_features.tar.gz and place it in /data/multinli/
 
 3. **MIMIC-IV** 
+
 A healthcare dataset for length-of-stay in ICU prediction.
     1. Request access to MIMIC-IV dataset
     2. Download the following datasets from https://physionet.org/content/mimiciv/3.1/ and place the following files in /data/mimic_icu/icu_stays/:
