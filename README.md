@@ -96,3 +96,12 @@ The command will generate a file called `color_mnist_experiment.pt` in the `/res
 ### Citation
 If you use this code or dataset, please cite the following paper:
 
+```
+@inproceedings{hong2025regularization,
+  title={Do Regularization Methods for Shortcut Mitigation Work As Intended?},
+  author={Hong, Haoyang and Papanikolaou, Ioanna and Parbhoo, Sonali},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2025},
+  organization={PMLR}
+}
+```
