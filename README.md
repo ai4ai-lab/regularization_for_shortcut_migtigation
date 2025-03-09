@@ -1,4 +1,4 @@
-## Regularization for shortcut migtigation
+## Regularization for shortcut mitigation
 
 This repository contains the implementation for the AISTATS 2025 paper "*Do Regularization Methods for Shortcut Mitigation Work As Intended?*". The project investigates the performance of different regularization methods for mitigating shortcut learning.
 
